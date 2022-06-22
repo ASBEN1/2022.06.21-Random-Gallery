@@ -1,0 +1,193 @@
+/* style.css */
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(http://www.openhiun.com/hangul/nanumbarungothic.css);
+@import url(//db.onlinewebfonts.com/c/4650cd390f041484c279d7298289a68f?family=Novecento+Wide+Normal);
+@import url(//db.onlinewebfonts.com/c/67821e7ef9a2952d6e7757a6cae5a826?family=Novecento+Wide+Bold);
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+/* font-family: 'Noto Sans KR', sans-serif;
+   font-family: 'Novecento Wide Normal', sans-serif; 
+   font-family: 'Jost', sans-serif;
+   */
+
+:root {
+  --text-color: #333;
+  --bg-color: #fff;
+}
+
+body {
+  font-size: 100%;
+  overflow: hidden;
+  height: 100vh;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+/* ========== 레이아웃 - 사이드바(헤더) ========== */
+
+/* ========== 사이드바 로고 ========== */
+
+#main-header {
+  width: 320px;
+  height: 100vh;
+  background: rgb(219, 187, 117);
+  padding: 60px 60px;
+  position: relative;
+  float: left;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 40%;
+}
+
+.logo>a>img {
+  width: 64%;
+}
+
+/* ========== 사이드바 네비게이션 ========== */
+
+#gnb {
+  text-align: center;
+  width: 200px;
+  height: 400px;
+  /*outline: 2px solid black;*/
+
+}
+
+#gnb>ul>li>a {
+  width: 200px;
+  height: 40px;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  /*outline: 2px solid black;*/
+}
+
+#gnb li {
+  margin-bottom: 80px;
+}
+
+#gnb span {
+  color: azure;
+  text-shadow: 0 0 2px #000;
+  font-size: 20px;
+  font-family: 'Novecento Wide Bold', sans-serif;
+  margin-bottom: 1px;
+}
+
+#gnb img {
+
+  border-radius: 50%;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.75);
+}
+
+/* ========== 사이드바 SNS ========== */
+
+.sns {
+  text-align: center;
+  width: 200px;
+  position: absolute;
+  bottom: 8%;
+}
+
+.sns>a {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* ========== 레이아웃 - MAIN ========== */
+
+main {
+  float: left;
+  height: 100vh;
+  width: calc(100% - 320px);
+  position: relative;
+}
+
+/* ========== 각각의 박스 ========== */
+
+.box01,
+.box02,
+.box03,
+.box04 {
+  position: relative;
+  width: calc(100%/2);
+  height: calc(100%/2);
+  float: left;
+  overflow: hidden;
+  text-align: center;
+  line-height: 56px;
+}
+
+
+.box01 {
+  background-image:
+    url("../images/BG01.jpg");
+}
+
+.box02 {
+  background-image:
+    url("../images/BG02.jpg");
+}
+
+.box03 {
+  background-image:
+    url("../images/BG03.jpg");
+}
+
+.box04 {
+  background-image:
+    url("../images/BG04.jpg");
+}
+
+
+.box01g,
+.box02g,
+.box03g,
+.box04g {
+  position: absolute;
+  display: inline-block;
+  left: 25%;
+  right: 25%;
+  bottom: 10%;
+}
+
+/* ========== 메인 박스 버튼 ========== */
+
+main .link-btn {
+  font-family: 'Jost', sans-serif;
+  font-weight: 600;
+  background: rgb(219, 226, 221);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+}
+
+/* ========== 메인 박스 H2 ========== */
+
+main h2 {
+  color: #fff;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+}
+
+/* ==========  ========== */
