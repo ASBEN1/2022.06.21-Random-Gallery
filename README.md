@@ -1,5 +1,5 @@
 # Random Image Gallery
-
+(재업로드 필요)
 ## 소개(Introduction)
 - 랜덤하게 이미지가 변경되는 갤러리
 - 시간도 표시됨
